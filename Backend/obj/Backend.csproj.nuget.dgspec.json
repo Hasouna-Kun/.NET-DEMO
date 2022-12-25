@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mohamed Hasouna\\source\\repos\\Uitilies\\Backend\\Backend.csproj": {}
+    "C:\\Users\\Mohamed Hasouna\\source\\repos\\.NET-DEMO\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mohamed Hasouna\\source\\repos\\Uitilies\\Backend\\Backend.csproj": {
+    "C:\\Users\\Mohamed Hasouna\\source\\repos\\.NET-DEMO\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohamed Hasouna\\source\\repos\\Uitilies\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\Mohamed Hasouna\\source\\repos\\.NET-DEMO\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\Mohamed Hasouna\\source\\repos\\Uitilies\\Backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\Mohamed Hasouna\\source\\repos\\.NET-DEMO\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohamed Hasouna\\source\\repos\\Uitilies\\Backend\\obj\\",
+        "outputPath": "C:\\Users\\Mohamed Hasouna\\source\\repos\\.NET-DEMO\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohamed Hasouna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,23 @@
                 "NU1605"
               ]
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
             },
