@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MXEJaD0+ncp/PE9qjvcWOm3kbIAyqiYTp78KrEyhE4husPoFGgzcjnA4/kHD1+ZS0SdJkwpDM6+CidaFoxR6KQ==",
+  "dgSpecHash": "ziTpLYH3ca3gbaVHT7qWjjul5VQEJPHd49mub3W4ELUTteqMwjDorS+ZR11qTwUEJGMXqGnrfB9rottWeB8gsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mohamed Hasouna\\source\\repos\\.NET-DEMO\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\Mohamed Hasouna\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",

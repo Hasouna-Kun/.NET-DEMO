@@ -19,6 +19,9 @@ namespace Backend.Context
         }
 
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Transaction> Transactions { get; set; }
+        public virtual DbSet<TransactionDetali> TransactionDetalis { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,6 +39,39 @@ namespace Backend.Context
                 entity.Property(e => e.NameAr).HasMaxLength(100);
 
                 entity.Property(e => e.NameEn).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<Customer>(entity =>
+            {
+                entity.Property(e => e.City).HasMaxLength(100);
+
+                entity.Property(e => e.NameAr).HasMaxLength(100);
+
+                entity.Property(e => e.NameEn).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<Transaction>(entity =>
+            {
+                entity.ToTable("Transaction");
+
+                entity.Property(e => e.Date)
+                    .HasColumnType("datetime")
+                    .HasColumnName("date");
+
+                entity.Property(e => e.Discribe)
+                    .HasMaxLength(300)
+                    .HasColumnName("discribe");
+            });
+
+            modelBuilder.Entity<TransactionDetali>(entity =>
+            {
+                entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.RetrievalDate)
+                    .HasColumnType("datetime")
+                    .HasColumnName("Retrieval Date");
+
+                entity.Property(e => e.TransactionId).HasColumnName("TransactionID");
             });
 
             OnModelCreatingPartial(modelBuilder);

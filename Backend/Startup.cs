@@ -1,6 +1,7 @@
 using Backend.Context;
 using Backend.Implementations;
 using Backend.Interfaces.Services;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,8 @@ namespace Backend
         {
             services.AddControllers();
 
+            services.AddFluentValidation(opt => opt.RegisterValidatorsFromAssemblyContaining(typeof(Startup)));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Backend", Version = "v1" });
@@ -40,6 +43,8 @@ namespace Backend
             services.AddDbContext<UtilitesContext>(app => app.UseSqlServer(Configuration.GetConnectionString("UtilitesDbConnection")));
 
             services.AddScoped<ICategoriesService, CategoriesService>();
+            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IMasterTransaction, MasterService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
